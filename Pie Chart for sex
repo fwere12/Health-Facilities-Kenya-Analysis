@@ -1,0 +1,21 @@
+# Define labels for the pie chart
+labels = ['Male', 'Female', 'Intersex']
+
+# Define sizes for each category
+sizes = sex_counts.values
+
+# Define colors for each category
+colors = ['lightblue', 'lightcoral', 'lightgreen']
+
+# Create the pie chart
+plt.figure(figsize=(8, 6))
+plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
+
+# Add a title
+plt.title('Sex Distribution in Nairobi County')
+
+# Equal aspect ratio ensures that pie is drawn as a circle
+plt.axis('equal')
+
+# Show the plot
+plt.show()
